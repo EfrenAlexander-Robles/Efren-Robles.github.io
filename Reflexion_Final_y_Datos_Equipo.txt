@@ -1,0 +1,33 @@
+DOCUMENTO DE ENTREGA Y REFLEXIÓN FINAL
+========================================
+
+INSTITUCIÓN: CBTis 246
+EVENTO: Concurso de Día de Muertos 2026 - "Huellitas al Mictlán"
+FECHA DE ENTREGA: Octubre de 2026
+
+1. DATOS DEL EQUIPO
+-------------------
+Nombre del Equipo: Los Guardianes del Mictlán
+Integrantes:
+  - Efren Alexander Robles Gómez (Desarrollo Frontend / Lógica JavaScript)
+  - Integrante 2 (Diseño Estilos CSS / UI & UX)
+  - Integrante 3 (Investigación Cultural y Contenido)
+
+2. DESCRIPCIÓN DEL SITIO Y RESPONSABILIDADES
+--------------------------------------------
+El sitio web promocional "Huellitas al Mictlán 2026" fue diseñado para informar e involucrar a la comunidad escolar del CBTis 246 en la celebración del Día de Muertos. 
+Organización de responsabilidades:
+- Estructura HTML5 Semántica y Accesibilidad: Efren Alexander Robles Gómez
+- Estilos CSS3, Layout Responsivo Grid/Flexbox y Paleta de Colores: Integrante 2
+- Funcionalidades Interactivas JS (Canvas de cempasúchil, Altar Virtual, Audio sintetizado, Modal): Efren Alexander y equipo.
+
+3. REFLEXIÓN FINAL
+------------------
+¿Qué aprendieron durante el desarrollo de esta página web?
+Aprendimos a integrar tecnologías web modernas (HTML5 semántico, CSS3 responsivo y JavaScript manipulando el DOM) orientadas a un propósito cultural específico. Desarrollamos habilidades para manejar animaciones en Canvas y el uso de la Web Audio API para generar ambientes sonoros.
+
+¿Cuál fue la parte más complicada y cómo la resolvieron?
+La parte más complicada fue coordinar la interactividad del altar virtual junto con la animación fluida de los pétalos de cempasúchil sin afectar el rendimiento en dispositivos móviles. Lo resolvimos estructurando código modular con eventos optimizados y consultas de medios CSS (Media Queries).
+
+¿De qué manera la tecnología puede ayudar a preservar y difundir nuestras tradiciones mexicanas?
+La tecnología permite reinterpretar las tradiciones para las nuevas generaciones, creando espacios digitales accesibles e interactivos que trascienden barreras físicas, permitiendo rendir tributo y difundir la riqueza de nuestras raíces culturales de forma creativa.

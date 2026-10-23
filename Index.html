@@ -1,100 +1,233 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Portafolio de Efrén</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f7fa;
-      color: #333;
-      line-height: 1.6;
-    }
-    header {
-      background: #222;
-      color: #fff;
-      padding: 30px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    section {
-      padding: 40px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #007acc;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 10px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin: 10px 0;
-    }
-    a {
-      color: #007acc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    footer {
-      background: #222;
-      color: #aaa;
-      text-align: center;
-      padding: 15px;
-      margin-top: 30px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas al Mictlán 2026 - CBTis 246</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>👋 Hola, soy Efrén</h1>
-    <p>Programador | IA | Robótica | Automatización</p>
-  </header>
+    <canvas id="cempasuchil-canvas"></canvas>
 
-  <section>
-    <h2>🚀 Sobre mí</h2>
-    <p>Soy estudiante de programación con experiencia en Python, Inteligencia Artificial, robótica y desarrollo de scripts de automatización. Me apasiona crear soluciones prácticas y compartir conocimiento.</p>
-  </section>
+    <!-- Control de Música -->
+    <div class="audio-control">
+        <button id="audio-toggle-btn" class="audio-btn">🎵 Activar Música Ambient</button>
+    </div>
 
-  <section>
-    <h2>📂 Proyectos</h2>
-    <ul>
-      <li>🤖 <a href="#">Brazo robótico con IA</a></li>
-      <li>🎮 <a href="#">Tetris en Python</a></li>
-      <li>⚡ <a href="#">Scripts de automatización</a></li>
-    </ul>
-  </section>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="cbtis-tag">CBTis 246</span>
+            <h2>Huellitas al Mictlán</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#tradicion">Tradición</a></li>
+            <li><a href="#reglamento">Reglamento</a></li>
+            <li><a href="#galeria">Muro del Recuerdo</a></li>
+            <li><a href="#altar">Altar Digital</a></li>
+            <li><a href="#participa">Participa</a></li>
+        </ul>
+    </nav>
 
-  <section>
-    <h2>💼 Servicios</h2>
-    <ul>
-      <li>✔️ Automatización de procesos con Python</li>
-      <li>✔️ Optimización y revisión de código</li>
-      <li>✔️ Asesoría en proyectos de IA</li>
-      <li>✔️ Prototipos en robótica</li>
-    </ul>
-  </section>
+    <!-- Header / Hero Section -->
+    <header id="inicio" class="hero">
+        <div class="hero-content">
+            <span class="sub-badge">Día de Muertos 2026 • CBTis 246</span>
+            <h1 class="glow-title">Huellitas al Mictlán</h1>
+            <p class="hero-date">📅 Viernes 30 de Octubre de 2026</p>
+            <p class="hero-quote">"Un amor que trasciende la vida y guía nuestras almas a través del recuerdo."</p>
+            <div class="hero-buttons">
+                <a href="#altar" class="btn btn-primary">🔥 Encender Ofrenda Digital</a>
+                <a href="#reglamento" class="btn btn-secondary">📄 Ver Concurso</a>
+            </div>
+        </div>
+    </header>
 
-  <section>
-    <h2>📞 Contacto</h2>
-    <p>📧 Email: <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a></p>
-    <p>🔗 LinkedIn: <a href="#">linkedin.com/in/efren</a></p>
-    <p>💻 GitHub: <a href="https://github.com/tu-usuario" target="_blank">github.com/tu-usuario</a></p>
-  </section>
+    <!-- Sección Tradición y Xoloitzcuintle -->
+    <section id="tradicion" class="section container">
+        <h2 class="section-title">Nuestras Tradiciones y el Mictlán</h2>
+        <div class="cards-grid">
+            <div class="info-card">
+                <div class="card-icon">💀</div>
+                <h3>El Significado del Día de Muertos</h3>
+                <p>Una de las festividades más representativas de México, inscrita en la lista del Patrimonio Cultural Inmaterial de la Humanidad por la UNESCO. Es el momento donde recordamos con alegría y cariño a quienes han partido.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">🐾</div>
+                <h3>El Vínculo con Nuestras Mascotas</h3>
+                <p>Nuestros animales de compañía nos brindan amor incondicional en vida. En la tradición popular, permanecen en nuestra memoria como guardianes y símbolos de lealtad constante.</p>
+            </div>
+            <div class="info-card">
+                <div class="card-icon">🐕</div>
+                <h3>El Xoloitzcuintle: Guía Espiritual</h3>
+                <p>En las cosmovisiones mesoamericanas, el Xoloitzcuintle era considerado el sagrado acompañante que ayudaba a las almas a cruzar el caudaloso río Apanohuacalhuia para llegar sanas y salvas al Mictlán.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Efrén - Todos los derechos reservados</p>
-  </footer>
+    <!-- Reglamento del Concurso -->
+    <section id="reglamento" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Concurso de Altares CBTis 246</h2>
+            <div class="reglamento-box">
+                <div class="reg-detail">
+                    <p><strong>📅 Fecha y Lugar:</strong> Viernes 30 de Octubre de 2026 — Explanada Principal del CBTis 246.</p>
+                    <p><strong>👥 Participantes:</strong> Estudiantes de 1.º, 3.º y 5.º semestre organizados en equipos de 8 a 10 integrantes.</p>
+                    <p><strong>🏮 Estructura:</strong> Altares tradicionales de siete niveles decorados con flores de cempasúchil, papel picado, copal, velas, alimentos y guardianes espirituales.</p>
+                    <p><strong>🎭 Caracterización:</strong> Acompañamiento obligatorio de catrinas y catrines caracterizados con la temática "Huellitas al Mictlán".</p>
+                </div>
+                <div class="reg-action">
+                    <button id="btn-modal-reglamento" class="btn btn-accent">📜 Consultar Reglamento Oficial</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Reglamento -->
+    <div id="modal-reglamento" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>📜 Reglamento Oficial del Concurso 2026</h2>
+            <h3>CBTis 246 — "Huellitas al Mictlán"</h3>
+            <div class="modal-body">
+                <ol>
+                    <li><strong>Registro de Equipos:</strong> Cada grupo de 1.º, 3.º y 5.º semestre registrará a su equipo (8 a 10 integrantes) ante el comité organizador antes del 25 de octubre.</li>
+                    <li><strong>Estructura del Altar:</strong> Deberá contar obligatoriamente con 7 niveles, que representan los escalones espirituales del alma en su camino al descanso.</li>
+                    <li><strong>Elementos Requeridos:</strong> Flor de cempasúchil, papel picado morado y naranja, veladoras, agua, sal, copal o incienso, calaveritas de azúcar/chocolate y fotografía/homenaje a mascotas entrañables del plantel o la comunidad.</li>
+                    <li><strong>Presentación:</strong> Los integrantes del equipo deberán explicar el significado de cada elemento y desfilar vestidos de catrines/catrinas temáticas.</li>
+                    <li><strong>Evaluación:</strong> Se evaluará originalidad, apego a la tradición mexicana, trabajo en equipo y respeto a las normas del plantel.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Muro del Recuerdo (Galería) -->
+    <section id="galeria" class="section container">
+        <h2 class="section-title">Muro del Recuerdo</h2>
+        <p class="section-subtitle">Honor a las mascotas que nos acompañaron y llenaron nuestras vidas de alegría.</p>
+
+        <div class="mascotas-grid">
+            <div class="mascota-card">
+                <div class="mascota-avatar">
+                    <img src="img/sol.jpg" alt="Sol" class="img-fluid">
+                </div>
+                <h3>Sol</h3>
+                <span class="mascota-tag">Xoloitzcuintle</span>
+                <p class="mascota-quote">"Guía fiel a través del camino estelar."</p>
+            </div>
+            <div class="mascota-card">
+                <div class="mascota-avatar">
+                    <img src="img/michi.jpg" alt="Michi" class="img-fluid">
+                </div>
+                <h3>Michi</h3>
+                <span class="mascota-tag">Gatito Guardián</span>
+                <p class="mascota-quote">"Tus ronroneos siguen resonando en el corazón."</p>
+            </div>
+            <div class="mascota-card">
+                <div class="mascota-avatar">
+                    <img src="img/max.jpg" alt="Max" class="img-fluid">
+                </div>
+                <h3>Max</h3>
+                <span class="mascota-tag">Compañero Incondicional</span>
+                <p class="mascota-quote">"Siempre corriendo libre en los campos dorados."</p>
+            </div>
+            <div class="mascota-card">
+                <div class="mascota-avatar">
+                    <img src="img/luna.jpg" alt="Luna" class="img-fluid">
+                </div>
+                <h3>Luna</h3>
+                <span class="mascota-tag">Protectora</span>
+                <p class="mascota-quote">"Tu luz ilumina la noche del Mictlán."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Altar Digital Interactivo -->
+    <section id="altar" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Ofrenda Digital e Interactiva</h2>
+            <p class="section-subtitle">Rinde homenaje a tu mascota encendiendo una veladora e inscribiendo su nombre en el altar.</p>
+
+            <div class="altar-container">
+                <div class="altar-display">
+                    <div class="altar-pyramid">
+                        <div class="level level-7">
+                            <span class="level-tag">Nivel 7: Imagen / Homenaje</span>
+                            <div class="altar-pet-photo-container">
+                                <img id="altar-pet-img" src="img/default-mascota.jpg" alt="Foto de la mascota" class="altar-img-preview">
+                            </div>
+                            <div id="altar-pet-name" class="pet-banner">🐾 [Tu Mascota Aquí]</div>
+                        </div>
+                        <div class="level level-6">
+                            <span class="level-tag">Nivel 6: Animas / Fotografía</span>
+                        </div>
+                        <div class="level level-5">
+                            <span class="level-tag">Nivel 5: Comida y Bebida Favorita</span>
+                        </div>
+                        <div class="level level-4">
+                            <span class="level-tag">Nivel 4: Pan de Muerto / Ofrendas</span>
+                        </div>
+                        <div class="level level-3">
+                            <span class="level-tag">Nivel 3: Sal para Purificación</span>
+                        </div>
+                        <div class="level level-2">
+                            <span class="level-tag">Nivel 2: Agua para la Sed del Viaje</span>
+                        </div>
+                        <div class="level level-1">
+                            <span class="level-tag">Nivel 1: Cruz y Santo Sepulcro</span>
+                        </div>
+                    </div>
+
+                    <div class="candle-container">
+                        <div id="virtual-candle" class="candle">
+                            <div id="flame" class="flame hidden"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="altar-controls">
+                    <h3>Inscribir en la Ofrenda</h3>
+                    <div class="form-group">
+                        <label for="input-pet-name">Nombre de tu Mascota:</label>
+                        <input type="text" id="input-pet-name" placeholder="Ej. Firulais, Pelusa, Maya..." maxlength="25">
+                    </div>
+                    <div class="form-group">
+                        <label for="input-dedication">Dedicatoria o Mensaje:</label>
+                        <textarea id="input-dedication" rows="3" placeholder="Escribe un breve mensaje con amor..."></textarea>
+                    </div>
+                    <div class="button-group">
+                        <button id="btn-update-altar" class="btn btn-primary">✨ Colocar en Altar</button>
+                        <button id="btn-toggle-candle" class="btn btn-secondary">🕯️ Encender / Apagar Veladora</button>
+                    </div>
+                    <div id="altar-message-box" class="altar-message-box hidden">
+                        <p id="display-dedication"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invitación / Cierre -->
+    <section id="participa" class="section container text-center">
+        <h2 class="section-title">¡Te Esperamos en el CBTis 246!</h2>
+        <p class="lead-text">Sumémonos a preservar nuestras hermosas tradiciones mexicanas y recordar con alegría a los seres y mascotas que siguen vivos en nuestra memoria.</p>
+        <div class="cierre-badge">
+            <p><strong>CBTis 246 — Común de las Tradiciones y la Cultura</strong></p>
+            <p>Viernes 30 de Octubre de 2026</p>
+            <p><em>"Hasta que nos volvamos a encontrar en el Mictlán..."</em> 🌼🐾</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 CBTis 246 — Evento Cultural Día de Muertos "Huellitas al Mictlán".</p>
+            <p>Desarrollado para la comunidad escolar por el equipo de programación web.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
